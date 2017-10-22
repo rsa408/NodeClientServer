@@ -1,0 +1,17 @@
+{
+  "name": "ajax_example",
+  "version": "1.0.0",
+  "description": "Simple AJAX exchange with NodeJs HTTP server",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RCW",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "knockout": "^3.4.2",
+    "w3-css": "^4.0.4"
+  }
+}
