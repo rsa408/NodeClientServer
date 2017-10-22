@@ -82,7 +82,7 @@ function calculate(arg) {
 function handlePost(body) {
     var response = '';
     var obj = JSON.parse(body);
-    // Error if no 'req' property.
+    // Error if no 'fcn' property.
     if (obj['fcn'] === 'undefined') {
         return JSON.stringify({ 'error': 'Request method missing' });
     }
