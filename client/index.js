@@ -76,6 +76,7 @@ var exampleViewModel;
  *
  ******************************************************************************/
 $(document).ready(function () {
+    window.resizeTo(800, 500);
     exampleViewModel = new ExampleViewModel();
 });
 //# sourceMappingURL=index.js.map

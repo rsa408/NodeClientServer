@@ -95,5 +95,6 @@ var exampleViewModel: ExampleViewModel;
 
 $(document).ready(function()
 {
+    window.resizeTo(800,500);
     exampleViewModel = new ExampleViewModel();
 });
