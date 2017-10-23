@@ -1,7 +1,9 @@
 /// <reference path="../types/jquery.d.ts" />
 /// <reference path="../types/knockout.d.ts" />
-declare var localUrl: string;
-declare function sendAjaxPost(targetUrl: string, postData: object, callback: (isSuccess: boolean, result: object) => any): void;
+/**
+ * General purpose AJAX exchange function that sends and receives JSON objects.
+ */
+declare function sendAjaxPost(postData: object, callback: (isSuccess: boolean, result: object) => any): void;
 /******************************************************************************
  *
  * View model.

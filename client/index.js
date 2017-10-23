@@ -1,10 +1,12 @@
 /// <reference path="../types/jquery.d.ts" />
 /// <reference path="../types/knockout.d.ts" />
-var localUrl = 'http://localhost:8080';
-function sendAjaxPost(targetUrl, postData, callback) {
+/**
+ * General purpose AJAX exchange function that sends and receives JSON objects.
+ */
+function sendAjaxPost(postData, callback) {
     $.ajax({
         type: 'POST',
-        url: targetUrl,
+        url: 'json-rpc',
         data: JSON.stringify(postData),
         dataType: 'json',
         async: true,
@@ -48,7 +50,7 @@ var ExampleViewModel = (function () {
         calcData.arg[1] = Number(self.value2());
         calcData.arg[2] = Number(self.value3());
         // Make the AJAX request.
-        sendAjaxPost(localUrl, calcData, function (isSuccess, obj) {
+        sendAjaxPost(calcData, function (isSuccess, obj) {
             /*
              * The response will be either:
              *

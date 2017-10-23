@@ -154,4 +154,6 @@ http.createServer(function (req, res) {
     });
     //
 }).listen(httpPort);
+// Message.
+console.log('Server listening on port ' + String(httpPort));
 //# sourceMappingURL=app.js.map
