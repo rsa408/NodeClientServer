@@ -1,7 +1,5 @@
 # NodeClientServer
 
-**Note: Linux only; contains symlinks**
-
 Example Node.js project that illustrates client server exchanges using AJAX with JSON data.
 
 The project "requires" only 'http', 'path', and 'fs'. It uses jQuery, knockout, and w3.css.
